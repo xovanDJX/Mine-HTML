@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 0%;
+            position: relative;
+            animation-name: hello;
+            animation-duration: 5s;
+        }
+
+        @keyframes hello {
+            0% {
+                left: 100px;
+                top: 0px;
+                background-color: red;
+            }
+
+            25% {
+                top: 100px;
+                left: 200px;
+                background-color: yellow;
+            }
+
+            50% {top: 200px;
+            left: 100px;
+            background-color: blue;}
+
+            75% {left: 0px;
+            top: 100px;
+            background-color: green;}
+
+            100% {top: 0px;
+            left: 100px;
+            background-color: red;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="box">hello</div>
+    </div>
+</body>
+
+</html>
